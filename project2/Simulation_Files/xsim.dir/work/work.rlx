@@ -1,0 +1,18 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/Users/turker/Desktop/comp_org/project2/AddressRegisterFile.v,1774212973,verilog,,,,AddressRegisterFile,,,,,,,,
+C:/Users/turker/Desktop/comp_org/project2/ArithmeticLogicUnit.v,1774281666,verilog,,,,ArithmeticLogicUnit,,,,,,,,
+C:/Users/turker/Desktop/comp_org/project2/ArithmeticLogicUnitSystem.v,1774369078,verilog,,,,ArithmeticLogicUnitSystem,,,,,,,,
+C:/Users/turker/Desktop/comp_org/project2/CPUSystem.v,1775985028,verilog,,,,CPUSystem,,,,,,,,
+C:/Users/turker/Desktop/comp_org/project2/CPUSystemSimulation.v,1775985041,verilog,,,,CPUSystemSimulation,,,,,,,,
+C:/Users/turker/Desktop/comp_org/project2/DataMemory.v,1772752576,verilog,,,,DataMemory,,,,,,,,
+C:/Users/turker/Desktop/comp_org/project2/DataMemoryUnit.v,1775509704,verilog,,,,DataMemoryUnit,,,,,,,,
+C:/Users/turker/Desktop/comp_org/project2/DataRegister.v,1774273626,verilog,,,,DataRegister,,,,,,,,
+C:/Users/turker/Desktop/comp_org/project2/Helper.v,1775940521,verilog,,,,CrystalOscillator;FileOperation;ResetGenerator,,,,,,,,
+C:/Users/turker/Desktop/comp_org/project2/InstructionMemory.v,1774368979,verilog,,,,InstructionMemory,,,,,,,,
+C:/Users/turker/Desktop/comp_org/project2/InstructionMemoryUnit.v,1774369031,verilog,,,,InstructionMemoryUnit,,,,,,,,
+C:/Users/turker/Desktop/comp_org/project2/InstructionRegister.v,1774209136,verilog,,,,InstructionRegister,,,,,,,,
+C:/Users/turker/Desktop/comp_org/project2/Register16bit.v,1774210086,verilog,,,,Register16bit,,,,,,,,
+C:/Users/turker/Desktop/comp_org/project2/RegisterFile.v,1774211135,verilog,,,,RegisterFile,,,,,,,,

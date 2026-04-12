@@ -83,8 +83,8 @@ module CPUSystem(
         // Based precisely on your AddressRegisterFile module
         case (DestReg)
             3'b000, 3'b001: Decoded_ARF_RegSel_Dest = 3'b011; // PC (enabled by ~RegSel[2])
-            3'b011: Decoded_ARF_RegSel_Dest = 3'b101;         // SP (enabled by ~RegSel[1])
             3'b010: Decoded_ARF_RegSel_Dest = 3'b110;         // AR (enabled by ~RegSel[0])
+            3'b011: Decoded_ARF_RegSel_Dest = 3'b101;         // SP (enabled by ~RegSel[1])
             default: Decoded_ARF_RegSel_Dest = 3'b111;        // None
         endcase
 
@@ -109,13 +109,13 @@ module CPUSystem(
         // Based precisely on your AddressRegisterFile module
         case (Active_SrcReg1)
             3'b000, 3'b001: ARF_OutCSel = 2'b00; // PC is Mux Line 00
-            3'b010: ARF_OutCSel = 2'b11;         // SP is Mux Line 11
-            3'b011: ARF_OutCSel = 2'b10;         // AR is Mux Line 10
+            3'b010: ARF_OutCSel = 2'b10;         // AR is Mux Line 10
+            3'b011: ARF_OutCSel = 2'b11;         // SP is Mux Line 11
             default: ARF_OutCSel = 2'b00;
         endcase
 
-        if (SrcReg2 == 3'b010) ARF_OutDSel = 1'b1; // SP is 1
-        else                   ARF_OutDSel = 1'b0; // AR is 0
+        if (SrcReg2 == 3'b010) ARF_OutDSel = 1'b0; // SP is 1
+        else                   ARF_OutDSel = 1'b1; // AR is 0
     end
 
     // ==========================================
@@ -164,7 +164,7 @@ module CPUSystem(
             else                           MuxASel = 2'b01; // ARF Output C
             
             if (SrcReg2[2] == 1'b1) MuxBSel = 2'b00; // RF Output B
-            else                    MuxBSel = 2'b01; // ARF Output D
+            else                    MuxBSel = 2'b10; // ARF Output D
         end
         MuxCSel = 1'b0;
 
